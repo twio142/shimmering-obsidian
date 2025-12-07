@@ -42,7 +42,8 @@ function run() {
 		return JSON.stringify({ items: [errorItem] });
 	}
 
-	let tagsArray = JSON.parse(readFile(tagsJSON)).map((/** @type {{ merged: boolean; }} */ tag) => {
+	let tagsArray = Object.entries(JSON.parse(readFile(tagsJSON))).map(([tagName, tag]) => {
+		tag.tag = tagName;
 		tag.merged = false;
 		return tag;
 	});

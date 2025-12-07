@@ -60,7 +60,7 @@ function run() {
 		? JSON.parse(readFile(excludeFilterJSON)).userIgnoreFilters
 		: [];
 	const recentFiles = fileExists(recentJSON) ? JSON.parse(readFile(recentJSON)).lastOpenFiles : [];
-	let canvasArray = fileExists(canvasJSON) ? JSON.parse(readFile(canvasJSON)) : [];
+	let canvasArray = fileExists(canvasJSON) ? Object.values(JSON.parse(readFile(canvasJSON))) : [];
 
 	//───────────────────────────────────────────────────────────────────────────
 	// Main Metadata
@@ -72,7 +72,7 @@ function run() {
 		};
 		return JSON.stringify({ items: [errorItem] });
 	}
-	let fileArray = JSON.parse(readFile(metadataJSON));
+	let fileArray = Object.values(JSON.parse(readFile(metadataJSON)));
 
 	//──────────────────────────────────────────────────────────────────────────────
 	// BOOKMARKS & STARS
