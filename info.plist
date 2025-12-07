@@ -2469,8 +2469,6 @@ tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
 			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>oo</string>
 				<key>subtext</key>
 				<string>'{var:scratchpad_append_prefix}{query}'</string>
 				<key>text</key>
@@ -2545,8 +2543,6 @@ tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
 			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>keyword</key>
-				<string>oo</string>
 				<key>subtext</key>
 				<string>{var:scratchpad_note_path}</string>
 				<key>text</key>
@@ -2890,7 +2886,7 @@ tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>ow</string>
+				<string>:w</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -2900,7 +2896,7 @@ tesseract "$temp_image" stdout -l $ocr_languages 2&gt;&amp;1</string>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>loading...</string>
+				<string>loading…</string>
 				<key>script</key>
 				<string></string>
 				<key>scriptargtype</key>
@@ -2999,7 +2995,7 @@ set parameter to do shell script "echo " &amp; quoted form of (system attribute 
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>on</string>
+				<string>:n</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -3245,7 +3241,7 @@ set parameter to do shell script "echo " &amp; quoted form of (system attribute 
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>oe</string>
+				<string>:e</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -3843,7 +3839,7 @@ set parameter to do shell script "echo " &amp; quoted form of (system attribute 
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>ot</string>
+				<string>:t</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -3853,7 +3849,7 @@ set parameter to do shell script "echo " &amp; quoted form of (system attribute 
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>loading...</string>
+				<string>loading…</string>
 				<key>script</key>
 				<string></string>
 				<key>scriptargtype</key>
@@ -3970,7 +3966,7 @@ set parameter to do shell script "echo " &amp; quoted form of (system attribute 
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>ob</string>
+				<string>:b</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4038,7 +4034,7 @@ set parameter to do shell script "echo " &amp; quoted form of (system attribute 
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>keyword</key>
-				<string>or</string>
+				<string>:r</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4054,7 +4050,7 @@ set parameter to do shell script "echo " &amp; quoted form of (system attribute 
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>./scripts/bookmark-or-recent-files.js</string>
+				<string></string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
@@ -4178,7 +4174,7 @@ set parameter to do shell script "echo " &amp; quoted form of (system attribute 
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>oa</string>
+				<string>:a</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4188,7 +4184,7 @@ set parameter to do shell script "echo " &amp; quoted form of (system attribute 
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Loading...</string>
+				<string>Loading…</string>
 				<key>script</key>
 				<string></string>
 				<key>scriptargtype</key>
@@ -4198,7 +4194,7 @@ set parameter to do shell script "echo " &amp; quoted form of (system attribute 
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search Attachments....</string>
+				<string>Search Attachments…</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
@@ -4368,7 +4364,7 @@ echo "$backup"</string>
 				<key>text</key>
 				<string>Obsidian Vault</string>
 				<key>title</key>
-				<string>⏳ Creating Backup...</string>
+				<string>⏳ Creating Backup…</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -4403,8 +4399,6 @@ echo "$backup"</string>
 			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>keyword</key>
-				<string>obackup</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -4481,8 +4475,6 @@ echo "$backup"</string>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>68</integer>
-				<key>keyword</key>
-				<string>ocss</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4494,14 +4486,7 @@ echo "$backup"</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>function run() {
-  var query = "{query}";
-  return query;
-
-
-
-{var:vault_path}/.obsidian/snippets
-}</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -4509,7 +4494,7 @@ echo "$backup"</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Open a CSS Snippet...</string>
+				<string>Open a CSS Snippet…</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
@@ -4537,8 +4522,6 @@ echo "$backup"</string>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>odd</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4548,7 +4531,7 @@ echo "$backup"</string>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>loading...</string>
+				<string>loading…</string>
 				<key>script</key>
 				<string></string>
 				<key>scriptargtype</key>
@@ -4647,8 +4630,6 @@ echo "$backup"</string>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>oh</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4658,7 +4639,7 @@ echo "$backup"</string>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Loading...</string>
+				<string>Loading…</string>
 				<key>script</key>
 				<string># INFO
 # - has Alfred caching enabled, so just using `curl` here is fine
@@ -4673,7 +4654,7 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search Obsidian Documentation...</string>
+				<string>Search Obsidian Documentation…</string>
 				<key>type</key>
 				<integer>11</integer>
 				<key>withspace</key>
@@ -4692,7 +4673,7 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>oupdate</string>
+				<string>|ob.refresh</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -4771,8 +4752,6 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
-				<key>keyword</key>
-				<string>oupdate</string>
 				<key>subtext</key>
 				<string>and Beta Plugins, if BRAT is installed</string>
 				<key>text</key>
@@ -4907,8 +4886,6 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>op</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4918,7 +4895,7 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>loading...</string>
+				<string>loading…</string>
 				<key>script</key>
 				<string></string>
 				<key>scriptargtype</key>
@@ -4928,7 +4905,7 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search Community Plugins &amp; Themes...</string>
+				<string>Search Community Plugins &amp; Themes…</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
@@ -4993,8 +4970,6 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>o,</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -5004,7 +4979,7 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>loading...</string>
+				<string>loading…</string>
 				<key>script</key>
 				<string></string>
 				<key>scriptargtype</key>
@@ -5014,7 +4989,7 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search Obsidian Settings...</string>
+				<string>Search Obsidian Settings…</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
@@ -5171,8 +5146,6 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>ov</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -5282,8 +5255,6 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>keyword</key>
-				<string>o.obsidian</string>
 				<key>subtext</key>
 				<string>{var:config_folder}</string>
 				<key>text</key>
@@ -5320,8 +5291,6 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>keyword</key>
-				<string>o.trash</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
@@ -5373,8 +5342,6 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>keyword</key>
-				<string>oplugins</string>
 				<key>subtext</key>
 				<string>in Finder</string>
 				<key>text</key>
@@ -5411,8 +5378,6 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>keyword</key>
-				<string>othemes</string>
 				<key>subtext</key>
 				<string>in Finder</string>
 				<key>text</key>
@@ -5447,7 +5412,7 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 	</array>
 	<key>readme</key>
 	<string>## 1️⃣ Setting up this workflow for the first time
-1. Install the Obsidian plugins [Advanced URI](https://obsidian.md/plugins?id=obsidian-advanced-uri) &amp; [Metadata Extractor](https://obsidian.md/plugins?id=metadata-extractor). 
+1. Install the Obsidian plugins [Advanced URI](https://obsidian.md/plugins?id=obsidian-advanced-uri) &amp; [Metadata Extractor](https://obsidian.md/plugins?id=metadata-extractor).
 2. Enable both plugins.
 3. Set your vault path in the configuration to the left.
 
@@ -5460,7 +5425,7 @@ curl -sL "https://raw.githubusercontent.com/chrisgrieser/alfred-docs-searches/ma
 
 ## ⚙️ Workflow Configuration
 - **Some features require additional configuration to the left.** You can get further information on those features at the respective sections of the [documentation](https://github.com/chrisgrieser/shimmering-obsidian/blob/main/README.md).
-- To configure the hotkeys, double-click the [sky-blue fields](https://i.imgur.com/wlpht7f.png) at the top left of the workflow window. 
+- To configure the hotkeys, double-click the [sky-blue fields](https://i.imgur.com/wlpht7f.png) at the top left of the workflow window.
 
 ## Links
 - 📙 [Changelog](https://github.com/chrisgrieser/shimmering-obsidian/releases)
