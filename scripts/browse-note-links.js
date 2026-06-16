@@ -92,7 +92,10 @@ function run() {
 	const allLinksArr = [];
 	const inputPath = $.getenv("inputPath");
 
-	const metaJSON = JSON.parse(readFile(metadataJSON));
+	if (!fileExists(metadataJSON)) {
+		return JSON.stringify({ items: [{ title: "metadata.json not found", subtitle: metadataJSON, valid: false }] });
+	}
+	const metaJSON = Object.values(JSON.parse(readFile(metadataJSON)));
 	const inputNoteJSON = metaJSON.filter((/** @type {{ relativePath: string}} */ note) =>
 		note.relativePath.includes(inputPath),
 	)[0];
@@ -101,13 +104,13 @@ function run() {
 	let bothLinksList = [];
 	let linkList = [];
 	let backlinkList = [];
-	if (inputNoteJSON.links) {
+	if (inputNoteJSON && inputNoteJSON.links) {
 		linkList = inputNoteJSON.links
 			.filter((/** @type {{ relativePath: string; }} */ line) => line.relativePath)
 			.map((/** @type {{ relativePath: string; }} */ item) => item.relativePath);
 		bothLinksList.push(...linkList);
 	}
-	if (inputNoteJSON.backlinks) {
+	if (inputNoteJSON && inputNoteJSON.backlinks) {
 		backlinkList = inputNoteJSON.backlinks.map(
 			(/** @type {{ relativePath: string; }} */ item) => item.relativePath,
 		);

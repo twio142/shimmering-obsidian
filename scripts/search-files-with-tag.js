@@ -76,7 +76,10 @@ function run() {
 	let selectedTag = $.getenv("selectedTag");
 	if (mergeNestedTags) selectedTag = selectedTag.split("/")[0];
 
-	let fileArray = JSON.parse(readFile(metadataJSON)).filter(
+	if (!fileExists(metadataJSON)) {
+		return JSON.stringify({ items: [{ title: "metadata.json not found", subtitle: metadataJSON, valid: false }] });
+	}
+	let fileArray = Object.values(JSON.parse(readFile(metadataJSON))).filter(
 		(/** @type {{ tags: string[]; }} */ j) => j.tags,
 	);
 	if (mergeNestedTags) {

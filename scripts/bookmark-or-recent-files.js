@@ -74,7 +74,10 @@ function run(argv) {
 
 	// filter the metadataJSON for the items:
 	// relativePaths of recent files OR bookmarks
-	const fileArray = JSON.parse(readFile(metadataJSON))
+	if (!fileExists(metadataJSON)) {
+		return JSON.stringify({ items: [{ title: "metadata.json not found", subtitle: metadataJSON, valid: false }] });
+	}
+	const fileArray = Object.values(JSON.parse(readFile(metadataJSON)))
 		.filter((/** @type {{ relativePath: string; }} */ item) => {
 			if (mode === "recents") return recentFiles.includes(item.relativePath);
 			if (mode === "bookmarks") return starsAndBookmarks.includes(item.relativePath);
